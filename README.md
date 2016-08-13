@@ -114,7 +114,7 @@ Question | Solutioin
 106. Construct Binary Tree from Inorder and Postorder Traversal | [106. Construct Binary Tree from Inorder and Postorder Traversal.go](\106. Construct Binary Tree from Inorder and Postorder Traversal.go)
 107. Binary Tree Level Order Traversal II | [107. Binary Tree Level Order Traversal II.go](\107. Binary Tree Level Order Traversal II.go)
 108. Convert Sorted Array to Binary Search Tree | [108. Convert Sorted Array to Binary Search Tree.go](\108. Convert Sorted Array to Binary Search Tree.go)
-109. Convert Sorted List to Binary Search Tree | [109. Convert Sorted List to Binary Search Tree.go](\109. Convert Sorted List to Binary Search Tree.go)
+~~109. Convert Sorted List to Binary Search Tree~~ | [~~109. Convert Sorted List to Binary Search Tree.go~~](\109. Convert Sorted List to Binary Search Tree.go)
 110. Balanced Binary Tree | [110. Balanced Binary Tree.go](\110. Balanced Binary Tree.go)
 111. Minimum Depth of Binary Tree | [111. Minimum Depth of Binary Tree.go](\111. Minimum Depth of Binary Tree.go)
 112. Path Sum | [112. Path Sum.go](\112. Path Sum.go)
