@@ -38,7 +38,8 @@ int main(){
 	vector<string> files;
 	getFiles(filePath, files);
 	for (int i = 0; i < files.size(); i++){
-		cout << files[i].erase(files[i].find_last_of('.')) << " | [" << files[i] << "](\\" << files[i] << ")" << endl;
+		string tmp = files[i];
+		cout << files[i].erase(files[i].find_last_of('.')) << " | [" << tmp << "](\\" << tmp << ")" << endl;
 	}
 
 }
