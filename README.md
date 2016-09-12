@@ -272,3 +272,7 @@ Question | Solutioin
 393. UTF-8 Validation | [393. UTF-8 Validation.go](\393. UTF-8 Validation.go)
 394. Decode String | [394. Decode String.go](\394. Decode String.go)
 395. Longest Substring with At Least K Repeating Characters | [395. Longest Substring with At Least K Repeating Characters.go](\395. Longest Substring with At Least K Repeating Characters.go)
+396. Rotate Function | [396. Rotate Function.go](\396. Rotate Function.go)
+397. Integer Replacement | [397. Integer Replacement.go](\397. Integer Replacement.go)
+398. Random Pick Index | [398. Random Pick Index.go](\398. Random Pick Index.cpp)
+399. Evaluate Division | [399. Evaluate Division.go](\399. Evaluate Division.go)
