@@ -276,6 +276,7 @@ Question | Solutioin
 397. Integer Replacement | [397. Integer Replacement.go](\397. Integer Replacement.go)
 398. Random Pick Index | [398. Random Pick Index.cpp](\398. Random Pick Index.cpp)
 399. Evaluate Division | [399. Evaluate Division.go](\399. Evaluate Division.go)
+<<<<<<< HEAD
 400. Nth Digit | [400. Nth Digit.go](\400. Nth Digit.go)
 401. Binary Watch | [401. Binary Watch.go](\401. Binary Watch.go)
 402. Remove K Digits | [402. Remove K Digits.go](\402. Remove K Digits.go)
@@ -284,3 +285,5 @@ Question | Solutioin
 405. Convert a Number to Hexadecimal | [405. Convert a Number to Hexadecimal.cpp](\405. Convert a Number to Hexadecimal.cpp)
 406. Queue Reconstruction by Height | [406. Queue Reconstruction by Height.go](\406. Queue Reconstruction by Height.go)
 407. ~~Trapping Rain Water II~~ | [407. Trapping Rain Water II.cpp](\407. Trapping Rain Water II.cpp)
+=======
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228

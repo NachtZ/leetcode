@@ -1,14 +1,11 @@
-<<<<<<< HEAD
 package main
 
 import (
 	"fmt"
-	"strings"
-	"strconv"
 	"math"
-	"unicode"
-	"math/rand"
 	//"sort"
+	"strconv"
+	"strings"
 )
 
 /***************************************/
@@ -28,11 +25,10 @@ type Point struct {
 	Y int
 }
 
-func useLib(){
+func useLib() {
 	fmt.Println(strconv.Itoa(1))
-	fmt.Println(strings.Compare("1","2"))
+	fmt.Println(strings.Compare("1", "2"))
 	fmt.Println(math.Abs(1.0))
-	fmt.Println(unicode.IsDigit('1'))
 }
 
 func buildTree(nums []int) *TreeNode {
@@ -82,44 +78,33 @@ func buildList(nums []int) *ListNode {
 		tmp = tmp.Next
 	}
 	return root
-
 }
 
-func max(a,b int)int{
-	if a<b{
-		return b
-	}
-	return a
-}
-func min(a,b int)int{
-	if a>b{
-		return b
-	}
-	return a
-}
 /**************************************************************/
-=======
->>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228
-func integerReplacement(n int) int {
-    if n <= 1{
-        return 0
-    }
-    if n %2 == 0{
-        return integerReplacement(n/2)+1
-    }else{
-        t1,t2 := integerReplacement(n+1),integerReplacement(n-1)
-        if t1 <t2{
-            return t1 +1
-        }else{
-            return t2 +1
-        }
-    }
-<<<<<<< HEAD
+func left(n int) int {
+	if n == 1 {
+		return 1
+	}
+	if n == 2 {
+		return 2
+	}
+	if n&1 == 1 {
+		return 2 * right((n-1)/2)
+	}
+	return 2 * right(n/2)
+}
+func right(n int) int {
+	if n == 1 || n == 2 {
+		return 1
+	}
+	if n&1 == 1 {
+		return 2 * left((n-1)/2)
+	}
+	return 2*left(n/2) - 1
+}
+func lastRemaining(n int) int {
+	return left(n)
 }
 func main() {
-
-	fmt.Println(integerReplacement(33))
+	fmt.Println(lastRemaining(9))
 }
-=======
-}
->>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228

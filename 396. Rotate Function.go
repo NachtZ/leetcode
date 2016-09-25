@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package main
 
 import (
@@ -97,6 +98,8 @@ func min(a,b int)int{
 	return a
 }
 /**************************************************************/
+=======
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228
 func maxRotateFunction(A []int) int {
     sum,f:= 0,0
 	for i:=0;i<len(A);i++{
@@ -112,8 +115,12 @@ func maxRotateFunction(A []int) int {
 		f += sum - A[len(A)-i]*len(A)
 	}
 	return m
+<<<<<<< HEAD
 }
 func main() {
 	fmt.Println(maxRotateFunction([]int{4, 3, 2, 6}))
 	//fmt.Println([][]int{},0)
 }
+=======
+}
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228

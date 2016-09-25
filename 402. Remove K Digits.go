@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package main
 
 import (
@@ -100,6 +101,10 @@ func min(a,b int)int{
 var res string
 func help(num string, k int) {
 	fmt.Println("1:",num,"|",res,"|",k)
+=======
+var res string
+func help(num string, k int) {
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228
     if k <= 0{
 		res = res + num
 		return
@@ -113,7 +118,11 @@ func help(num string, k int) {
 			minIdx = i
 		}
 	}
+<<<<<<< HEAD
 	fmt.Println(num,"|",minIdx,"|",res,"|",k)
+=======
+
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228
 	res = res + string(num[minIdx])
 	new := num[minIdx+1:]
 	help(new,k - minIdx)
@@ -132,8 +141,12 @@ func removeKdigits(num string, k int) string {
 		res = "0"
 	}
 	return res
+<<<<<<< HEAD
 }
 
 func main() {
 	fmt.Println(removeKdigits("1432219",3))
 }
+=======
+}
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228

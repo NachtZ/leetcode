@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package main
 
 import (
@@ -97,6 +98,8 @@ func min(a,b int)int{
 	return a
 }
 /**************************************************************/
+=======
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228
 func calcEquation(equations [][]string, values []float64, query [][]string) []float64 {
     m := make(map[[2]string]float64)
 	//tm := make(map[string]float64)
@@ -179,9 +182,13 @@ func calcEquation(equations [][]string, values []float64, query [][]string) []fl
 	}
 	return ret
 
+<<<<<<< HEAD
 }
 func main() {
 	t:=calcEquation([][]string{[]string{"a","b"},[]string{"b","c"}},[]float64{2.0,3.0},
 	[][]string{[]string{"a","c"},[]string{"b","c"},[]string{"a","e"},[]string{"a","a"},[]string{"x","x"}})
 	fmt.Println(t)
 }
+=======
+}
+>>>>>>> a38f5365aa7083d4f4bb5157c44dcece331c9228
