@@ -286,3 +286,4 @@ Question | Solutioin
 407. ~~Trapping Rain Water II~~ | [407. Trapping Rain Water II.cpp](\407. Trapping Rain Water II.cpp)
 409. Longest Palindrome | [409. Longest Palindrome.cpp](\409. Longest Palindrome.cpp)
 410. Split Array Largest Sum | [410. Split Array Largest Sum.cpp](\410. Split Array Largest Sum.cpp)
+412. Fizz Buzz | [412. Fizz Buzz.go](\412. Fizz Buzz.go)
