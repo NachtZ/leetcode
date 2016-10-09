@@ -287,3 +287,7 @@ Question | Solutioin
 409. Longest Palindrome | [409. Longest Palindrome.cpp](\409. Longest Palindrome.cpp)
 410. Split Array Largest Sum | [410. Split Array Largest Sum.cpp](\410. Split Array Largest Sum.cpp)
 412. Fizz Buzz | [412. Fizz Buzz.go](\412. Fizz Buzz.go)
+415. Add Strings | [415. Add Strings.go](\415. Add Strings.go)
+416. Partition Equal Subset Sum | [416. Partition Equal Subset Sum](\416. Partition Equal Subset Sum.go)
+417. Pacific Atlantic Water Flow | [417. Pacific Atlantic Water Flow.go](\417. Pacific Atlantic Water Flow.go)
+418. Sentence Screen Fitting | [418. Sentence Screen Fitting.go](\418. Sentence Screen Fitting.go)
