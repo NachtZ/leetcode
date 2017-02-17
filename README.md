@@ -292,3 +292,5 @@ Question | Solutioin
 417. Pacific Atlantic Water Flow | [417. Pacific Atlantic Water Flow.go](\417. Pacific Atlantic Water Flow.go)
 418. Sentence Screen Fitting | [418. Sentence Screen Fitting.go](\418. Sentence Screen Fitting.go)
 432. All O`one Data Structure | [432. All O`one Data Structure.go](\432. All O`one Data Structure.go)
+434. Number of Segments in a String | [434. Number of Segments in a String.go](\434. Number of Segments in a String.go)
+
