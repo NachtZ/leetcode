@@ -291,3 +291,4 @@ Question | Solutioin
 416. Partition Equal Subset Sum | [416. Partition Equal Subset Sum](\416. Partition Equal Subset Sum.go)
 417. Pacific Atlantic Water Flow | [417. Pacific Atlantic Water Flow.go](\417. Pacific Atlantic Water Flow.go)
 418. Sentence Screen Fitting | [418. Sentence Screen Fitting.go](\418. Sentence Screen Fitting.go)
+432. All O`one Data Structure | [432. All O`one Data Structure.go](\432. All O`one Data Structure.go)
