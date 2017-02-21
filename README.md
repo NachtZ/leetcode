@@ -294,3 +294,8 @@ Question | Solutioin
 432. All O`one Data Structure | [432. All O`one Data Structure.go](\432. All O`one Data Structure.go)
 434. Number of Segments in a String | [434. Number of Segments in a String.go](\434. Number of Segments in a String.go)
 445. Add Two Numbers II | [445. Add Two Numbers II.go](\445. Add Two Numbers II.go)
+446. Arithmetic Slices II - Subsequence | [446. Arithmetic Slices II - Subsequence.go](\446. Arithmetic Slices II - Subsequence.go)
+459. Repeated Substring Pattern | [459. Repeated Substring Pattern.go](\459. Repeated Substring Pattern.go)
+520. Detect Capital | [520. Detect Capital.go](\520. Detect Capital.go)
+525. Contiguous Array | [525. Contiguous Array.go](\525. Contiguous Array.go)
+526. Beautiful Arrangement | [526. Beautiful Arrangement.go](\526. Beautiful Arrangement.go)
