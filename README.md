@@ -296,6 +296,8 @@ Question | Solutioin
 445. Add Two Numbers II | [445. Add Two Numbers II.go](\445. Add Two Numbers II.go)
 446. Arithmetic Slices II - Subsequence | [446. Arithmetic Slices II - Subsequence.go](\446. Arithmetic Slices II - Subsequence.go)
 459. Repeated Substring Pattern | [459. Repeated Substring Pattern.go](\459. Repeated Substring Pattern.go)
+513. Find Bottom Left Tree Value | [513. Find Bottom Left Tree Value.go](\513. Find Bottom Left Tree Value.go)
+515. Find Largest Value in Each Tree Row | [515. Find Largest Value in Each Tree Row.go](\515. Find Largest Value in Each Tree Row.go)
 516. Longest Palindromic Subsequence | [516. Longest Palindromic Subsequence.go](\516. Longest Palindromic Subsequence.go)
 517. Super Washing Machines | [517. Super Washing Machines.go](\517. Super Washing Machines.go)
 520. Detect Capital | [520. Detect Capital.go](\520. Detect Capital.go)
