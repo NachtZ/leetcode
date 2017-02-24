@@ -297,5 +297,6 @@ Question | Solutioin
 446. Arithmetic Slices II - Subsequence | [446. Arithmetic Slices II - Subsequence.go](\446. Arithmetic Slices II - Subsequence.go)
 459. Repeated Substring Pattern | [459. Repeated Substring Pattern.go](\459. Repeated Substring Pattern.go)
 520. Detect Capital | [520. Detect Capital.go](\520. Detect Capital.go)
+517. Super Washing Machines | [517. Super Washing Machines.go](\517. Super Washing Machines.go)
 525. Contiguous Array | [525. Contiguous Array.go](\525. Contiguous Array.go)
 526. Beautiful Arrangement | [526. Beautiful Arrangement.go](\526. Beautiful Arrangement.go)
