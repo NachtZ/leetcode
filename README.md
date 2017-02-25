@@ -2,6 +2,10 @@
 ## This is a answer collection of leetcode written in Golang. 
 If one question support golang, I will try to use golang to solve it. If not, I'll use cpp.  
 If there are some problem I can't solve. I'll put some blogs' link in it.  
+
+
+Almost of the answers is a runnable go file. I have added some basic function and type like `ListNode` && `buildList` and `LinkNode`&&`buildLink` for local test.
+
 The answer list is :  
 
 Question | Solutioin
@@ -296,6 +300,7 @@ Question | Solutioin
 445. Add Two Numbers II | [445. Add Two Numbers II.go](\445. Add Two Numbers II.go)
 446. Arithmetic Slices II - Subsequence | [446. Arithmetic Slices II - Subsequence.go](\446. Arithmetic Slices II - Subsequence.go)
 459. Repeated Substring Pattern | [459. Repeated Substring Pattern.go](\459. Repeated Substring Pattern.go)
+503. Next Greater Element II | [503. Next Greater Element II.go](\503. Next Greater Element II.go)
 504. Base 7 | [504. Base 7.go](\504. Base 7.go)
 506. Relative Ranks | [506. Relative Ranks.go](\506. Relative Ranks.go)
 508. Most Frequent Subtree Sum | [508. Most Frequent Subtree Sum.go](\508. Most Frequent Subtree Sum.go)
