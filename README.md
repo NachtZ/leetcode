@@ -311,4 +311,5 @@ Question | Solutioin
 520. Detect Capital | [520. Detect Capital.go](\520. Detect Capital.go)
 525. Contiguous Array | [525. Contiguous Array.go](\525. Contiguous Array.go)
 526. Beautiful Arrangement | [526. Beautiful Arrangement.go](\526. Beautiful Arrangement.go)
+529. Minesweeper | [529. Minesweeper.go](\529. Minesweeper.go)
 530. Minimum Absolute Difference in BST | [530. Minimum Absolute Difference in BST.go](\530. Minimum Absolute Difference in BST.go)
