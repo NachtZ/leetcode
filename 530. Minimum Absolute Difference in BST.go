@@ -6,7 +6,6 @@ import (
 	"strconv"
 	"strings"
 	"unicode"
-	"reflect"
 	//"math/rand"
 	//"sort"
 	//"regexp"
@@ -125,44 +124,34 @@ func (s IntSlice)Len()int{
 }
 */
 /**************************************************************/
-func findBottomLeftValue(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
-	ret := root.Val
-	MemBlock := make([][]*TreeNode, 2)
-	MemBlock[0] = make([]*TreeNode, 0, 512)
-	MemBlock[1] = make([]*TreeNode, 0, 512)
-	MemBlock[0] = append(MemBlock[0], root)
-	idx := 0
-	for len(MemBlock[idx]) > 0 {
-		ret = MemBlock[idx][0].Val
-		for _, ptr := range MemBlock[idx] {
-			if ptr.Left != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Left)
-			}
-			if ptr.Right != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Right)
-			}
-		}
-		MemBlock[idx] = make([]*TreeNode, 0, 512)
-		idx = 1 - idx
+var st []int
 
+func inorder(root *TreeNode) {
+	if root == nil {
+		return
+	}
+	if root.Left != nil {
+		inorder(root.Left)
+	}
+	st = append(st, root.Val)
+
+	if root.Right != nil {
+		inorder(root.Right)
+	}
+}
+
+func getMinimumDifference(root *TreeNode) int {
+	st = make([]int, 0, 256)
+	inorder(root)
+	ret := math.MaxInt32
+	for i := 1; i < len(st); i++ {
+		t := st[i] - st[i-1]
+		if ret > t {
+			ret = t
+		}
 	}
 	return ret
 }
-
-var maps = map[int]string{
-	1:"1",
-	2:"2",
-}
-
 func main() {
-	var u ListNode
-	t := reflect.Typeof(u)
-	for i,n:= 0,t.NumField();i<n;i++{
-		f := t.Field(i)
-		fmt.Println(f.Name,f.Type)
-	}
-
+	fmt.Println(getMinimumDifference(buildTree([]int{1, -1, 3, 2})))
 }
