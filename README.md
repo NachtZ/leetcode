@@ -309,6 +309,8 @@ Question | Solutioin
 516. Longest Palindromic Subsequence | [516. Longest Palindromic Subsequence.go](\516. Longest Palindromic Subsequence.go)
 517. Super Washing Machines | [517. Super Washing Machines.go](\517. Super Washing Machines.go)
 520. Detect Capital | [520. Detect Capital.go](\520. Detect Capital.go)
+523. Continuous Subarray Sum | [523. Continuous Subarray Sum.go](\523. Continuous Subarray Sum.go)
+524. Longest Word in Dictionary through Deleting | [524. Longest Word in Dictionary through Deleting.go](\524. Longest Word in Dictionary through Deleting.go)
 525. Contiguous Array | [525. Contiguous Array.go](\525. Contiguous Array.go)
 526. Beautiful Arrangement | [526. Beautiful Arrangement.go](\526. Beautiful Arrangement.go)
 529. Minesweeper | [529. Minesweeper.go](\529. Minesweeper.go)
