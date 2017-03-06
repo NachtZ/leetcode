@@ -315,3 +315,5 @@ Question | Solutioin
 526. Beautiful Arrangement | [526. Beautiful Arrangement.go](\526. Beautiful Arrangement.go)
 529. Minesweeper | [529. Minesweeper.go](\529. Minesweeper.go)
 530. Minimum Absolute Difference in BST | [530. Minimum Absolute Difference in BST.go](\530. Minimum Absolute Difference in BST.go)
+532. K-diff Pairs in an Array | [532. K-diff Pairs in an Array.go](\532. K-diff Pairs in an Array.go)
+533. Lonely Pixel II | [533. Lonely Pixel II.go](\533. Lonely Pixel II.go)
