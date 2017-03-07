@@ -6,7 +6,6 @@ import (
 	"strconv"
 	"strings"
 	"unicode"
-	"reflect"
 	//"math/rand"
 	//"sort"
 	//"regexp"
@@ -123,46 +122,69 @@ func (s IntSlice)Swap(i,j int){
 func (s IntSlice)Len()int{
 	return len(s)
 }
+
+type StrSlice []string
+
+func (s StrSlice) Less(i, j int) bool {
+	if len(s[i]) != len(s[j]) {
+		return len(s[i]) > len(s[j])
+	}
+	return s[i] < s[j]
+}
+func (s StrSlice) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
+}
+func (s StrSlice) Len() int {
+	return len(s)
+}
+
 */
 /**************************************************************/
-func findBottomLeftValue(root *TreeNode) int {
-	if root == nil {
+
+func findBlackPixel(picture [][]byte, N int) int {
+	if len(picture) == 0 || len(picture[0]) == 0 {
 		return 0
 	}
-	ret := root.Val
-	MemBlock := make([][]*TreeNode, 2)
-	MemBlock[0] = make([]*TreeNode, 0, 512)
-	MemBlock[1] = make([]*TreeNode, 0, 512)
-	MemBlock[0] = append(MemBlock[0], root)
-	idx := 0
-	for len(MemBlock[idx]) > 0 {
-		ret = MemBlock[idx][0].Val
-		for _, ptr := range MemBlock[idx] {
-			if ptr.Left != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Left)
-			}
-			if ptr.Right != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Right)
+	dic := make(map[string]int)
+	strs := make([]string, len(picture))
+	arrC := make([]int, len(picture[0]))
+	arrR := make([]int, len(picture))
+	for i := 0; i < len(picture); i++ {
+		str := ""
+		for j := 0; j < len(picture[0]); j++ {
+			str += string(picture[i][j])
+			if picture[i][j] == 'B' {
+				arrC[j]++
+				arrR[i]++
 			}
 		}
-		MemBlock[idx] = make([]*TreeNode, 0, 512)
-		idx = 1 - idx
-
+		strs[i] = str
+		dic[str]++
 	}
-	return ret
+	count := 0
+	for i := 0; i < len(picture); i++ {
+		if dic[strs[i]] != N {
+			continue
+		}
+		for j := 0; j < len(picture[0]); j++ {
+			if picture[i][j] == 'B' {
+				if arrC[j] == arrR[i] && arrC[j] == N {
+					count++
+				}
+			}
+		}
+	}
+	return count
 }
-
-var maps = map[int]string{
-	1:"1",
-	2:"2",
-}
-
 func main() {
-	var u ListNode
-	t := reflect.Typeof(u)
-	for i,n:= 0,t.NumField();i<n;i++{
-		f := t.Field(i)
-		fmt.Println(f.Name,f.Type)
+	pic := make([][]byte, 6)
+	str := []string{"WBWBBW", "BWBWWB", "WBWBBW", "BWBWWB", "WWWBBW", "BWBWWB"}
+	for i := 0; i < len(str); i++ {
+		pic[i] = make([]byte, 6)
+		for j := 0; j < len(str[i]); j++ {
+			pic[i][j] = str[i][j]
+		}
 	}
+	fmt.Println(findBlackPixel(pic, 3))
 
 }

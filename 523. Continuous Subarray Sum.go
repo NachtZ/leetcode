@@ -6,7 +6,6 @@ import (
 	"strconv"
 	"strings"
 	"unicode"
-	"reflect"
 	//"math/rand"
 	//"sort"
 	//"regexp"
@@ -123,46 +122,58 @@ func (s IntSlice)Swap(i,j int){
 func (s IntSlice)Len()int{
 	return len(s)
 }
+
+type StrSlice []string
+
+func (s StrSlice) Less(i, j int) bool {
+	if len(s[i]) != len(s[j]) {
+		return len(s[i]) > len(s[j])
+	}
+	return s[i] < s[j]
+}
+func (s StrSlice) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
+}
+func (s StrSlice) Len() int {
+	return len(s)
+}
+
 */
 /**************************************************************/
-func findBottomLeftValue(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
-	ret := root.Val
-	MemBlock := make([][]*TreeNode, 2)
-	MemBlock[0] = make([]*TreeNode, 0, 512)
-	MemBlock[1] = make([]*TreeNode, 0, 512)
-	MemBlock[0] = append(MemBlock[0], root)
-	idx := 0
-	for len(MemBlock[idx]) > 0 {
-		ret = MemBlock[idx][0].Val
-		for _, ptr := range MemBlock[idx] {
-			if ptr.Left != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Left)
-			}
-			if ptr.Right != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Right)
+
+func checkSubarraySum(nums []int, k int) bool {
+	if k == 0 {
+		for i := 0; i < len(nums)-1; i++ {
+			if nums[i] == 0 && nums[i+1] == 0 {
+				return true
 			}
 		}
-		MemBlock[idx] = make([]*TreeNode, 0, 512)
-		idx = 1 - idx
-
+		return false
 	}
-	return ret
+	if k < 0 {
+		k = -k
+	}
+	if len(nums) == 2*k {
+		return true
+	}
+	dp := []int{0}
+	for _, t := range nums {
+		dp = append(dp, (dp[len(dp)-1]+t)%k)
+	}
+	dic := make(map[int]int)
+	for i := 0; i < len(dp); i++ {
+		if v, ok := dic[dp[i]]; ok {
+			if i-v > 1 {
+				return true
+			}
+		} else {
+			dic[dp[i]] = i
+		}
+	}
+	return false
 }
-
-var maps = map[int]string{
-	1:"1",
-	2:"2",
-}
-
 func main() {
-	var u ListNode
-	t := reflect.Typeof(u)
-	for i,n:= 0,t.NumField();i<n;i++{
-		f := t.Field(i)
-		fmt.Println(f.Name,f.Type)
-	}
+
+	fmt.Println(checkSubarraySum([]int{1, 2, 3}, 5))
 
 }

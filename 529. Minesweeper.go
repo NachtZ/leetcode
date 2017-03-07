@@ -6,7 +6,6 @@ import (
 	"strconv"
 	"strings"
 	"unicode"
-	"reflect"
 	//"math/rand"
 	//"sort"
 	//"regexp"
@@ -125,44 +124,53 @@ func (s IntSlice)Len()int{
 }
 */
 /**************************************************************/
-func findBottomLeftValue(root *TreeNode) int {
-	if root == nil {
-		return 0
+func updateBoard(board [][]byte, click []int) [][]byte {
+	x, y := click[0], click[1]
+	move := [][]int{
+		[]int{1, 0},
+		[]int{-1, 0},
+		[]int{0, 1},
+		[]int{0, -1},
+		[]int{1, 1},
+		[]int{1, -1},
+		[]int{-1, 1},
+		[]int{-1, -1},
 	}
-	ret := root.Val
-	MemBlock := make([][]*TreeNode, 2)
-	MemBlock[0] = make([]*TreeNode, 0, 512)
-	MemBlock[1] = make([]*TreeNode, 0, 512)
-	MemBlock[0] = append(MemBlock[0], root)
-	idx := 0
-	for len(MemBlock[idx]) > 0 {
-		ret = MemBlock[idx][0].Val
-		for _, ptr := range MemBlock[idx] {
-			if ptr.Left != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Left)
+	switch board[x][y] {
+	case 'M':
+		board[x][y] = 'X'
+	case 'E':
+		count := 0
+		for i := 0; i < 8; i++ {
+			newx, newy := x+move[i][0], y+move[i][1]
+			if newx < 0 || newx >= len(board) || newy < 0 || newy >= len(board[0]) {
+				continue
 			}
-			if ptr.Right != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Right)
+			if board[newx][newy] == 'M' {
+				count++
 			}
 		}
-		MemBlock[idx] = make([]*TreeNode, 0, 512)
-		idx = 1 - idx
-
+		if count > 0 {
+			board[x][y] = byte('0' + count)
+		} else {
+			board[x][y] = 'B'
+			for i := 0; i < 8; i++ {
+				newx, newy := x+move[i][0], y+move[i][1]
+				if newx < 0 || newx >= len(board) || newy < 0 || newy >= len(board[0]) || board[newx][newy] != 'E' {
+					continue
+				}
+				updateBoard(board, []int{newx, newy})
+			}
+		}
 	}
-	return ret
+	return board
 }
-
-var maps = map[int]string{
-	1:"1",
-	2:"2",
-}
-
 func main() {
-	var u ListNode
-	t := reflect.Typeof(u)
-	for i,n:= 0,t.NumField();i<n;i++{
-		f := t.Field(i)
-		fmt.Println(f.Name,f.Type)
+	b := [][]byte{
+		[]byte{'E', 'E', 'E', 'E', 'E'},
+		[]byte{'E', 'E', 'M', 'E', 'E'},
+		[]byte{'E', 'E', 'E', 'E', 'E'},
+		[]byte{'E', 'E', 'E', 'E', 'E'},
 	}
-
+	fmt.Println(updateBoard(b, []int{3, 0}))
 }

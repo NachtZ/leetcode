@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"strings"
 	"unicode"
-	"reflect"
 	//"math/rand"
 	//"sort"
 	//"regexp"
+	"sort"
 )
 
 /***************************************/
@@ -125,44 +125,42 @@ func (s IntSlice)Len()int{
 }
 */
 /**************************************************************/
-func findBottomLeftValue(root *TreeNode) int {
-	if root == nil {
-		return 0
+
+type StrSlice []string
+
+func (s StrSlice) Less(i, j int) bool {
+	if len(s[i]) != len(s[j]) {
+		return len(s[i]) > len(s[j])
 	}
-	ret := root.Val
-	MemBlock := make([][]*TreeNode, 2)
-	MemBlock[0] = make([]*TreeNode, 0, 512)
-	MemBlock[1] = make([]*TreeNode, 0, 512)
-	MemBlock[0] = append(MemBlock[0], root)
-	idx := 0
-	for len(MemBlock[idx]) > 0 {
-		ret = MemBlock[idx][0].Val
-		for _, ptr := range MemBlock[idx] {
-			if ptr.Left != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Left)
+	return s[i] < s[j]
+}
+func (s StrSlice) Swap(i, j int) {
+	s[i], s[j] = s[j], s[i]
+}
+func (s StrSlice) Len() int {
+	return len(s)
+}
+
+func findLongestWord(s string, d []string) string {
+
+	sort.Sort(StrSlice(d))
+	fmt.Println(d)
+	for _, str := range d {
+		if str == s {
+			return s
+		}
+		for i, j := 0, 0; i <= len(s); i++ {
+			if j == len(str) {
+				return str
 			}
-			if ptr.Right != nil {
-				MemBlock[1-idx] = append(MemBlock[1-idx], ptr.Right)
+			if i < len(s) && s[i] == str[j] {
+				j++
 			}
 		}
-		MemBlock[idx] = make([]*TreeNode, 0, 512)
-		idx = 1 - idx
-
 	}
-	return ret
+	return ""
 }
-
-var maps = map[int]string{
-	1:"1",
-	2:"2",
-}
-
 func main() {
-	var u ListNode
-	t := reflect.Typeof(u)
-	for i,n:= 0,t.NumField();i<n;i++{
-		f := t.Field(i)
-		fmt.Println(f.Name,f.Type)
-	}
 
+	fmt.Println(findLongestWord("bab", []string{"ba", "ab", "a", "b"}))
 }
