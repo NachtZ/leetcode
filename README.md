@@ -334,3 +334,5 @@ Question | Solutioin
 531. Lonely Pixel I | [531. Lonely Pixel I.go](\531. Lonely Pixel I.go)
 532. K-diff Pairs in an Array | [532. K-diff Pairs in an Array.go](\532. K-diff Pairs in an Array.go)
 533. Lonely Pixel II | [533. Lonely Pixel II.go](\533. Lonely Pixel II.go)
+539. Minimum Time Difference | [539. Minimum Time Difference.go](\539. Minimum Time Difference.go)
+541. Reverse String II | [541. Reverse String II.go](\541. Reverse String II.go)
