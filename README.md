@@ -300,6 +300,8 @@ Question | Solutioin
 445. Add Two Numbers II | [445. Add Two Numbers II.go](\445. Add Two Numbers II.go)
 446. Arithmetic Slices II - Subsequence | [446. Arithmetic Slices II - Subsequence.go](\446. Arithmetic Slices II - Subsequence.go)
 459. Repeated Substring Pattern | [459. Repeated Substring Pattern.go](\459. Repeated Substring Pattern.go)
+476. Number Complement | [476. Number Complement.go](\476. Number Complement.go) 
+477. Total Hamming Distance | [477. Total Hamming Distance.go](\477. Total Hamming Distance.go)
 480. Sliding Window Median | [480. Sliding Window Median.go](\480. Sliding Window Median.go)
 481. Magical String | [481. Magical String.go](\481. Magical String.go)
 482. License Key Formatting | [482. License Key Formatting.go](\482. License Key Formatting.go)
