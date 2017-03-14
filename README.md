@@ -301,6 +301,8 @@ Question | Solutioin
 446. Arithmetic Slices II - Subsequence | [446. Arithmetic Slices II - Subsequence.go](\446. Arithmetic Slices II - Subsequence.go)
 459. Repeated Substring Pattern | [459. Repeated Substring Pattern.go](\459. Repeated Substring Pattern.go)
 475. Heaters | [475. Heaters.go](\475. Heaters.go)
+473. Matchsticks to Square | [473. Matchsticks to Square.go](\473. Matchsticks to Square.go)
+474. Ones and Zeroes | [474. Ones and Zeroes.go](\474. Ones and Zeroes.go)
 476. Number Complement | [476. Number Complement.go](\476. Number Complement.go) 
 477. Total Hamming Distance | [477. Total Hamming Distance.go](\477. Total Hamming Distance.go)
 480. Sliding Window Median | [480. Sliding Window Median.go](\480. Sliding Window Median.go)
