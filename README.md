@@ -9,8 +9,8 @@ Almost of the answers is a runnable go file. I have added some basic function an
 The answer list is :  
 
 Question | Solutioin
----|---
-1.two sum | [1.two sum.py](\1.two sum.py)
+---|---  
+1. two sum | [1.two sum.py](\1.two sum.py)
 2. Add Two Numbers | [2. Add Two Numbers.py](\2. Add Two Numbers.py)
 3. Longest Substring Without Repeating Characters | [3. Longest Substring Without Repeating Characters.py](\3. Longest Substring Without Repeating Characters.py)
 4. Median of Two Sorted Arrays | [4. Median of Two Sorted Arrays.py](\4. Median of Two Sorted Arrays.py)
