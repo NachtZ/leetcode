@@ -10,13 +10,13 @@ The answer list is :
 
 Question | Solutioin
 ---|---  
-1. two sum | [1.two sum.py](\1.two sum.py)
-2. Add Two Numbers | [2. Add Two Numbers.py](\2. Add Two Numbers.py)
-3. Longest Substring Without Repeating Characters | [3. Longest Substring Without Repeating Characters.py](\3. Longest Substring Without Repeating Characters.py)
-4. Median of Two Sorted Arrays | [4. Median of Two Sorted Arrays.py](\4. Median of Two Sorted Arrays.py)
-5. Longest Palindromic Substring | [5. Longest Palindromic Substring.py](\5. Longest Palindromic Substring.py)
-6. ZigZag Conversion | [6. ZigZag Conversion.py](\6. ZigZag Conversion.py)
-7. Reverse Integer | [7. Reverse Integer.py](\7. Reverse Integer.py)
+1.two sum | [1.two sum.py](\1.two sum.py)
+2.Add Two Numbers | [2. Add Two Numbers.py](\2. Add Two Numbers.py)
+3.Longest Substring Without Repeating Characters | [3. Longest Substring Without Repeating Characters.py](\3. Longest Substring Without Repeating Characters.py)
+4.Median of Two Sorted Arrays | [4. Median of Two Sorted Arrays.py](\4. Median of Two Sorted Arrays.py)
+5.Longest Palindromic Substring | [5. Longest Palindromic Substring.py](\5. Longest Palindromic Substring.py)
+6.ZigZag Conversion | [6. ZigZag Conversion.py](\6. ZigZag Conversion.py)
+7.Reverse Integer | [7. Reverse Integer.py](\7. Reverse Integer.py)
 9. Palindrome Number | [9. Palindrome Number.go](\9. Palindrome Number.go)
 8. String to Integer (atoi) | [8. String to Integer (atoi).cpp](\8. String to Integer (atoi).cpp)
 10. Regular Expression Matching | [10. Regular Expression Matching.go](\10. Regular Expression Matching.go)
