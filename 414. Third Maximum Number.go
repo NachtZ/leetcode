@@ -83,7 +83,9 @@ func buildList(nums []int) *ListNode {
 /**************************************************************/
 func thirdMax(nums []int) int {
 	max1, max2, max3 := -2147483648, -2147483648, -2147483648
+	temp := make(map[int]int)
 	for i := 0; i < len(nums); i++ {
+		temp[nums[i]]++
 		if max3 >= nums[i] || max1 == nums[i] || max2 == nums[i] {
 			continue
 		}
@@ -95,7 +97,7 @@ func thirdMax(nums []int) int {
 			max1, max2 = max2, max1
 		}
 	}
-	if len(nums) <= 2 {
+	if len(temp) <= 2 {
 		return max1
 	}
 	return max3
